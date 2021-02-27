@@ -18,7 +18,7 @@ def connected(client):
     print('Subscribing to Feed {0}'.format(Feed_id2))
     client.subscribe(Feed_id2)
     print('Waiting for feed data...')
-def disconnected(client):
+def disconnected(client) :
     sys.exit(1)
 def message1(client, Feed_id, payload1):
     if Feed_id=="bulb1":
